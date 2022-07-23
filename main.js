@@ -21,7 +21,7 @@ const getPeople = async () => {
     const timestamp = Date.now();
         console.log(timestamp);
 
-    fs.rename('test.txt', '`${timestamp}`.txt', () => {
+    fs.rename('test.txt', `${timestamp}.txt`, () => {
         console.log("It works");
     });
 
